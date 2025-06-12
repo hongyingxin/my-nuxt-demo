@@ -103,7 +103,33 @@
             </p>
           </div>
         </NuxtLink>
+
+        <!-- 演示按钮 -->
+        <NuxtLink
+        to="/fetch-demo"
+          class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+        >
+          <div>
+            <span class="rounded-lg inline-flex p-3 bg-red-50 text-red-700 ring-4 ring-white">
+              <!-- 换个图标 -->
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+              </svg>
+            </span>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-lg font-medium">
+              <span class="absolute inset-0" aria-hidden="true"></span>
+              演示
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              演示页面
+            </p>
+          </div>
+        </NuxtLink>
+        
       </div>
+
     </div>
   </div>
 </template>
