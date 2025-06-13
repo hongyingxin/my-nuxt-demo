@@ -104,7 +104,7 @@
           </div>
         </NuxtLink>
 
-        <!-- 演示按钮 -->
+        <!-- fetch按钮 -->
         <NuxtLink
         to="/fetch-demo"
           class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
@@ -120,14 +120,118 @@
           <div class="mt-8">
             <h3 class="text-lg font-medium">
               <span class="absolute inset-0" aria-hidden="true"></span>
-              演示
+              fetch
             </h3>
             <p class="mt-2 text-sm text-gray-500">
-              演示页面
+              演示fetch
             </p>
           </div>
         </NuxtLink>
         
+        <!-- 请求封装演示按钮 -->
+        <NuxtLink
+          to="/request-demo"
+          class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+        >
+          <div>
+            <span class="rounded-lg inline-flex p-3 bg-purple-50 text-purple-700 ring-4 ring-white">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </span>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-lg font-medium">
+              <span class="absolute inset-0" aria-hidden="true"></span>
+              请求封装
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              请求工具演示
+            </p>
+          </div>
+        </NuxtLink>
+      </div>
+
+      <div class="mt-12">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            Nuxt 渲染模式示例
+          </h2>
+          <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500">
+            了解不同的渲染模式及其特点
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- SSR 示例链接 -->
+          <NuxtLink
+            to="/ssr-demo"
+            class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+          >
+            <div>
+              <span class="rounded-lg inline-flex p-3 bg-blue-50 text-blue-700 ring-4 ring-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                </svg>
+              </span>
+            </div>
+            <div class="mt-8">
+              <h3 class="text-lg font-medium">
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                服务端渲染 (SSR)
+              </h3>
+              <p class="mt-2 text-sm text-gray-500">
+                查看服务端渲染示例，内容在服务器端生成
+              </p>
+            </div>
+          </NuxtLink>
+
+          <!-- CSR 示例链接 -->
+          <NuxtLink
+            to="/client-demo"
+            class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+          >
+            <div>
+              <span class="rounded-lg inline-flex p-3 bg-green-50 text-green-700 ring-4 ring-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </span>
+            </div>
+            <div class="mt-8">
+              <h3 class="text-lg font-medium">
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                客户端渲染 (CSR)
+              </h3>
+              <p class="mt-2 text-sm text-gray-500">
+                查看客户端渲染示例，内容在浏览器端生成
+              </p>
+            </div>
+          </NuxtLink>
+
+          <!-- 混合渲染示例链接 -->
+          <NuxtLink
+            to="/mixed-demo"
+            class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+          >
+            <div>
+              <span class="rounded-lg inline-flex p-3 bg-purple-50 text-purple-700 ring-4 ring-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                </svg>
+              </span>
+            </div>
+            <div class="mt-8">
+              <h3 class="text-lg font-medium">
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                混合渲染
+              </h3>
+              <p class="mt-2 text-sm text-gray-500">
+                查看混合渲染示例，同时使用 SSR 和 CSR
+              </p>
+            </div>
+          </NuxtLink>
+        </div>
       </div>
 
     </div>
