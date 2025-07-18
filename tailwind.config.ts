@@ -9,6 +9,7 @@ export default <Config> {
     './app.vue',
     './error.vue'
   ],
+  darkMode: 'class', // 启用 class 策略的 dark 模式
   theme: {
     extend: {},
   },

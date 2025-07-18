@@ -2,7 +2,18 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+    'pinia-plugin-persistedstate/nuxt',
+  ],
+  pinia: {
+    autoImports: ['defineStore', 'storeToRefs', 'piniaPluginPersistedstate'],
+  },
+  // pinia持久化存储，只有客户端生效
+  // piniaPersistedstate: {
+  //   storage: 'localStorage'
+  // },
   css: ['~/assets/css/main.css'],
   
   // 添加路由规则

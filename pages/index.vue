@@ -150,6 +150,153 @@
             </p>
           </div>
         </NuxtLink>
+
+        <!-- Pinia 状态管理示例 -->
+        <NuxtLink
+          to="/pinia-demo"
+          class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+        >
+          <div>
+            <span class="rounded-lg inline-flex p-3 bg-yellow-50 text-yellow-700 ring-4 ring-white">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+              </svg>
+            </span>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-lg font-medium">
+              <span class="absolute inset-0" aria-hidden="true"></span>
+              Pinia 状态管理
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              使用 Pinia 的状态管理示例
+            </p>
+          </div>
+        </NuxtLink>
+
+        <!-- Tailwind CSS 演示 -->
+        <NuxtLink
+          to="/tailwind-demo"
+          class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+        >
+          <div>
+            <span class="rounded-lg inline-flex p-3 bg-cyan-50 text-cyan-700 ring-4 ring-white">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
+              </svg>
+            </span>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-lg font-medium">
+              <span class="absolute inset-0" aria-hidden="true"></span>
+              Tailwind CSS
+            </h3>
+            <p class="mt-2 text-sm text-gray-500">
+              Tailwind CSS 样式演示
+            </p>
+          </div>
+        </NuxtLink>
+
+        <!-- 主题切换实现方式对比 -->
+        <div class="col-span-full">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">主题切换实现方式对比</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- 方案1: 状态变量 -->
+            <NuxtLink
+              to="/tailwind-demo"
+              class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+            >
+              <div>
+                <span class="rounded-lg inline-flex p-3 bg-blue-50 text-blue-700 ring-4 ring-white">
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </span>
+              </div>
+              <div class="mt-8">
+                <h3 class="text-lg font-medium">
+                  <span class="absolute inset-0" aria-hidden="true"></span>
+                  状态变量方式
+                </h3>
+                <p class="mt-2 text-sm text-gray-500">
+                  使用 ref 管理主题状态
+                </p>
+              </div>
+            </NuxtLink>
+
+            <!-- 方案2: Tailwind dark 模式 -->
+            <NuxtLink
+              to="/tailwind-demo-v2"
+              class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+            >
+              <div>
+                <span class="rounded-lg inline-flex p-3 bg-green-50 text-green-700 ring-4 ring-white">
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                  </svg>
+                </span>
+              </div>
+              <div class="mt-8">
+                <h3 class="text-lg font-medium">
+                  <span class="absolute inset-0" aria-hidden="true"></span>
+                  Tailwind Dark 模式
+                </h3>
+                <p class="mt-2 text-sm text-gray-500">
+                  使用 dark: 前缀实现
+                </p>
+              </div>
+            </NuxtLink>
+
+            <!-- 方案3: CSS 变量 -->
+            <NuxtLink
+              to="/tailwind-demo-v3"
+              class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+            >
+              <div>
+                <span class="rounded-lg inline-flex p-3 bg-purple-50 text-purple-700 ring-4 ring-white">
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
+                  </svg>
+                </span>
+              </div>
+              <div class="mt-8">
+                <h3 class="text-lg font-medium">
+                  <span class="absolute inset-0" aria-hidden="true"></span>
+                  CSS 变量方式
+                </h3>
+                <p class="mt-2 text-sm text-gray-500">
+                  使用 CSS 变量实现
+                </p>
+              </div>
+            </NuxtLink>
+
+            <!-- 方案4: 覆盖 Tailwind 内部变量 -->
+            <NuxtLink
+              to="/tailwind-demo-v4"
+              class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
+            >
+              <div>
+                <span class="rounded-lg inline-flex p-3 bg-green-50 text-green-700 ring-4 ring-white">
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </span>
+              </div>
+              <div class="mt-8">
+                <h3 class="text-lg font-medium">
+                  <span class="absolute inset-0" aria-hidden="true"></span>
+                  覆盖 Tailwind 内部变量
+                </h3>
+                <p class="mt-2 text-sm text-gray-500">
+                  参考掘金文章的正确实现
+                </p>
+              </div>
+            </NuxtLink>
+          </div>
+          
+
+        </div>
+
       </div>
 
       <div class="mt-12">
